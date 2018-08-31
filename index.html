@@ -31,14 +31,27 @@
            }
 
             
-         
+        .button {
+            border-radius: 6px;
+            background-color: #337AB7;
+            border: none;
+            color: white;
+            padding: 15px 45px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
             
             #article-section-one {
                 float: left;
                 padding: 20px;
                 width: 100%;
                 background-color: #f1f1f1;
-                height: 600px; /* only for demonstration, should be removed */
+                height: 350px; /* only for demonstration, should be removed */
+                align-content: center;
             }
             #article-section-second {
                 float: left;
@@ -130,7 +143,17 @@
 
 </head>
 <body>
-    
+        <nav>
+
+                <ul style="list-style: none; font-size:20px; color: white; margin-right: 20px">
+             
+                <li style="float: right; padding: 20px; ">Equipo</li>
+                <li style="float: right; padding: 20px; ">Blog</li>
+                <li style="float: right; padding: 20px; ">Contacto</li>
+             </ul>
+             
+             
+                    </nav>
 
              <header>
                 <h2>COMIENZA UNA NUEVA VIDA<br> Y ÚNETE AL MUNDO<br> TECNOLÓGICO</h2>
@@ -163,9 +186,11 @@
         <section >
 
           <article id="article-section-one">
-            <h1 id="article-h1">EL BOOTCAMP DE PROGRAMACIÓN MÁS GRANDE DE LATINOAMÉRICA</h1>
-            <p class="article-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corporis repellendus fuga dolorum excepturi tempora tempore quasi dolor modi! Illo at dolorem delectus, architecto maiores obcaecati eos culpa repellendus a!.</p>
-            <p class="article-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius possimus quaerat quibusdam nulla nobis vero ex, necessitatibus animi optio quos veniam impedit nisi laudantium quas a omnis. Voluptatem, esse harum?</p>
+            <h1 id="article-h1">SOLICITA INFORMACION E INSCRIBETE</h1>
+            <p class="article-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corporis repellendus fuga dolorum excepturi <BR>tempora tempore quasi dolor modi! Illo at dolorem delectus, architecto maiores obcaeca!.</p>
+          
+            <button class="button">Inscribete!</button>
+
           </article>
         </section>
 
