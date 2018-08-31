@@ -13,26 +13,65 @@
             body {
                 font-family: Arial, Helvetica, sans-serif;
             }
+            .divpadre
+           {
+               text-align:center;
+               margin:  100px 0 80px 20px;
+
+           }
             
             /* Style the header */
-            header {
-                background-image: url("images/bg.jpeg");
-                padding: 150px;
-                text-align: center;
-                font-size: 35px;
-                color: white;
-            }
+        header {
+               background-image: url("images/bg.jpeg");
+               padding: 150px;
+               text-align: center;
+               font-size: 25px;
+               color: white;
+               font-family: Helvetica,
+           }
+
             
          
             
-            article {
+            #article-section-one {
                 float: left;
                 padding: 20px;
                 width: 100%;
                 background-color: #f1f1f1;
                 height: 600px; /* only for demonstration, should be removed */
             }
+            #article-section-second {
+                float: left;
+                padding: 20px;
+                width: 100%;
+                background-color:white;
+                height: 400px; /* only for demonstration, should be removed */
+            }
             
+
+            #article-section-second > #div-one-section
+            {
+            
+            }
+            #article-section-second > #div-second-section
+            {
+
+           
+            }
+            .box{
+            height: 100px;
+            padding: 5px;
+            float: left;
+            width: 40%;
+            border: solid 1px white;
+            box-sizing:border-box;
+            }
+            .p-contacto{
+            
+                text-align: right;
+            }
+            
+
             /* Clear floats after the columns */
             section:after {
                 content: "";
@@ -42,18 +81,49 @@
             
             /* Style the footer */
             footer {
-                background-color: #777;
+                background-color:black;
                 padding: 10px;
                 text-align: center;
                 color: white;
             }
             
-            /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-            @media (max-width: 600px) {
-                nav, article {
-                    width: 100%;
-                    height: auto;
-                }
+           
+            
+            #article-h1{
+
+                 text-align: center;
+            }
+            .article-p{
+
+                text-align: center;
+
+            }
+            #footer-p{
+                text-align: left;
+                left: 20px ;
+                font:  bold ;
+                margin-left: 100px;
+            }
+            h1{
+            text-align: center;
+            padding-top: 10px;
+
+            }
+            h2{
+
+            text-align: center;
+            margin-top:  10px;
+            }
+            p{
+
+            text-align: center;
+
+            }
+            h3{
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 120%;
+                text-align: center;
+
             }
             </style>
 
@@ -62,30 +132,66 @@
 <body>
     
 
-        <header>
-          <h2>Cities</h2>
-        </header>
+             <header>
+                <h2>COMIENZA UNA NUEVA VIDA<br> Y ÚNETE AL MUNDO<br> TECNOLÓGICO</h2>
+                <img src="images/latam_logo.png"; style="float: left; position: relative; height: 40px; bottom: 300px; right:  50px">
+              </header>
+       
+              <div class=“divpadre”>
+       
+       
+                  <div style=" width: 60%; margin: auto;">
+       
+       
+                  <h1>EL BOOTCAMP DE PROGRAMACIÓN MÁS GRANDE DE LATINOAMÉRICA</h1>
+       
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat.
+                  </p>
+              </div>
+       
+       </div>
+       
+          <div align="center">
+              <img src="images/people.png"; style="height: 600px">
+       
+          </div>
         
-        <section>
+        <section >
 
-          <article>
-            <h1>London</h1>
-            <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-            <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+          <article id="article-section-one">
+            <h1 id="article-h1">EL BOOTCAMP DE PROGRAMACIÓN MÁS GRANDE DE LATINOAMÉRICA</h1>
+            <p class="article-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corporis repellendus fuga dolorum excepturi tempora tempore quasi dolor modi! Illo at dolorem delectus, architecto maiores obcaecati eos culpa repellendus a!.</p>
+            <p class="article-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius possimus quaerat quibusdam nulla nobis vero ex, necessitatibus animi optio quos veniam impedit nisi laudantium quas a omnis. Voluptatem, esse harum?</p>
           </article>
         </section>
 
         <section>
 
-                <article>
-                  <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatibus iure dicta, recusandae neque reiciendis voluptatum repudiandae aut aliquam, adipisci reprehenderit! Nulla a expedita recusandae accusamus ducimus fugiat necessitatibus dicta?</h1>
-                  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+               <article id="article-section-second">
+               <div class="box contacto"> 
+                <p class="p-contacto">Contacto</p>
+                <p class="p-contacto">Desafio Latam </p>
+                <p class="p-contacto">Ezequias Alliende 2361</p>
+                <p class="p-contacto">P: +56 9 5117 7975 </p>
+                <p class="p-contacto">Inscripciones@desafiolatam.com</p>
+            
+               </div>
+               <div class="box email"> 
+                <p>Suscribete</p>
+                <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</P>
+                <textarea></textarea> <button></button>
+               </div>
+
+
                 </article>
               </section>
         
         <footer>
-          <p>Footer</p>
+          <p id="footer-p">DESAFIOLATAM 2016 - CURSO FULLSTACK G5</p>
         </footer>
         
 
