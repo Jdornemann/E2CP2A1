@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Landing Latam</title>
     <style>
             * {
                 box-sizing: border-box;
@@ -44,14 +44,54 @@
             margin: 4px 2px;
             cursor: pointer;
         }
-            
+        .button_info   
+        {
+            border-radius: 6px;
+            background-color: green;
+            border: none;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        } 
+        input
+        {
+            background: transparent;   
+             display: inline-block;
+             height: 36px;
+             color:#000;
+             border:#8c9cad 1px solid;
+         
+        }
+        
+        .button_contact
+        {
+            border-radius: 6px;
+            background-color: rgb(248, 245, 245);
+            border: solid 0.5px black ;
+            color:black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+
+
+
+        }
             #article-section-one {
                 float: left;
                 padding: 20px;
                 width: 100%;
                 background-color: #f1f1f1;
                 height: 350px; /* only for demonstration, should be removed */
-                align-content: center;
+                text-align: center;
             }
             #article-section-second {
                 float: left;
@@ -73,15 +113,27 @@
             }
             .box{
             height: 100px;
-            padding: 5px;
+            position: relative;
+            padding: 20px;
             float: left;
-            width: 40%;
+            width: 50%;
             border: solid 1px white;
             box-sizing:border-box;
             }
-            .p-contacto{
+            .contacto{
+                
+            text-align:left;
+            padding-left: 400px;
+            }
+            .email{
+                
+                text-align:left;
+                padding-left: 0;
+                }
             
-                text-align: right;
+            .p-header{
+            
+            font-size: 60%;
             }
             
 
@@ -127,7 +179,7 @@
             text-align: center;
             margin-top:  10px;
             }
-            p{
+            .p-menu{
 
             text-align: center;
 
@@ -144,19 +196,18 @@
 </head>
 <body>
         <nav>
-
-                <ul style="list-style: none; font-size:20px; color: white; margin-right: 20px">
-             
+            <ul style="list-style: none; font-size:20px; color: white; margin-right: 20px">
                 <li style="float: right; padding: 20px; ">Equipo</li>
                 <li style="float: right; padding: 20px; ">Blog</li>
                 <li style="float: right; padding: 20px; ">Contacto</li>
-             </ul>
-             
-             
-                    </nav>
+            </ul>
+         </nav>
 
              <header>
                 <h2>COMIENZA UNA NUEVA VIDA<br> Y ÚNETE AL MUNDO<br> TECNOLÓGICO</h2>
+                <button class="button">Comienza acá!</button>
+                <button class="button_info">Más Info!</button>
+                <p class="p-header">Hay una escasez gigante de desarrolladores en el mundo y más aún en Latinoamérica, se necesitan más <br>desarrolladores y tú puedes ser uno! </p>
                 <img src="images/latam_logo.png"; style="float: left; position: relative; height: 40px; bottom: 300px; right:  50px">
               </header>
        
@@ -168,7 +219,7 @@
        
                   <h1>EL BOOTCAMP DE PROGRAMACIÓN MÁS GRANDE DE LATINOAMÉRICA</h1>
        
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  <p class="p-menu">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -190,30 +241,27 @@
             <p class="article-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corporis repellendus fuga dolorum excepturi <BR>tempora tempore quasi dolor modi! Illo at dolorem delectus, architecto maiores obcaeca!.</p>
           
             <button class="button">Inscribete!</button>
-
+            <p class="article-p">Vive la experiencia Desafio Latam!</p>
           </article>
         </section>
 
         <section>
-
-               <article id="article-section-second">
+            <article id="article-section-second">
                <div class="box contacto"> 
-                <p class="p-contacto">Contacto</p>
-                <p class="p-contacto">Desafio Latam </p>
-                <p class="p-contacto">Ezequias Alliende 2361</p>
-                <p class="p-contacto">P: +56 9 5117 7975 </p>
-                <p class="p-contacto">Inscripciones@desafiolatam.com</p>
-            
-               </div>
-               <div class="box email"> 
-                <p>Suscribete</p>
-                <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</P>
-                <textarea></textarea> <button></button>
+                    <p class="p-contacto">Contacto</p>
+                    <p class="p-contacto">Desafio Latam </p>
+                    <p class="p-contacto">Ezequias Alliende 2361</p>
+                    <p class="p-contacto">P: +56 9 5117 7975 </p>
+                    <p class="p-contacto">Inscripciones@desafiolatam.com</p>
                </div>
 
-
-                </article>
-              </section>
+                <div class="box email"> 
+                    <p>Suscribete</p>
+                    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</P>
+                    <input value="Ingresa tu email..."></input> <button class="button_contact">Enviar</button>
+               </div>
+            </article>
+        </section>
         
         <footer>
           <p id="footer-p">DESAFIOLATAM 2016 - CURSO FULLSTACK G5</p>
